@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Financial Dream Planner</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>💰 AI Financial Dream Planner</h1>
+
+        <p class="subtitle">
+            Plan your future goals using AI and financial analysis
+        </p>
+
+
+        <!-- USER DETAILS -->
+
+        <div class="card">
+
+            <h2>Personal Details</h2>
+
+
+            <form id="plannerForm">
+
+
+                <div class="grid">
+
+                    <div>
+                        <label>Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Age</label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            placeholder="Enter your age"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>City</label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Example: Kolkata"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Education</label>
+
+                        <input
+                            type="text"
+                            id="education"
+                            placeholder="Example: B.Tech"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Job Role</label>
+
+                        <input
+                            type="text"
+                            id="job_role"
+                            placeholder="Example: Software Engineer"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Saving Percentage (%)</label>
+
+                        <input
+                            type="number"
+                            id="saving_percentage"
+                            placeholder="Example: 30"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <h2>Financial Goals</h2>
+
+
+                <div class="grid">
+
+                    <div>
+
+                        <label>Marriage Goal (Years)</label>
+
+                        <input
+                            type="number"
+                            id="marriage_years"
+                            placeholder="Example: 5"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Car Goal (Years)</label>
+
+                        <input
+                            type="number"
+                            id="car_years"
+                            placeholder="Example: 3"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Home Goal (Years)</label>
+
+                        <input
+                            type="number"
+                            id="home_years"
+                            placeholder="Example: 10"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit">
+
+                    Generate My Financial Plan
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+        <!-- RESULT SECTION -->
+
+        <div id="result" class="card hidden">
+
+            <h2>📊 Your Financial Plan</h2>
+
+            <div id="resultContent"></div>
+
+        </div>
+
+
+        <!-- RAG SECTION -->
+
+        <div class="card">
+
+            <h2>🤖 Financial Assistant</h2>
+
+
+            <div class="rag-box">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask a financial question..."
+                >
+
+
+                <button
+                    type="button"
+                    onclick="askQuestion()"
+                >
+
+                    Ask
+
+                </button>
+
+            </div>
+
+
+            <div id="ragResult"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
