@@ -63,18 +63,6 @@ class QuestionInput(BaseModel):
 
 
 # ==========================================
-# HOME API
-# ==========================================
-
-@app.get("/")
-def home():
-
-    return {
-        "message": "Welcome to AI Financial Dream Planner"
-    }
-
-
-# ==========================================
 # FINANCIAL PLANNING API
 # ==========================================
 
