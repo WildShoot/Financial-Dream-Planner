@@ -1,15 +1,9 @@
 const form = document.getElementById("plannerForm");
-
-
 form.addEventListener("submit", async function(event) {
-
     event.preventDefault();
-
-
     const data = {
 
         name: document.getElementById("name").value,
-
         age: Number(
             document.getElementById("age").value
         ),
