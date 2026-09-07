@@ -9,9 +9,7 @@ goal_data = pd.read_csv(
 )
 
 
-# Inflation rate from assignment
-
-INFLATION_RATE = 6
+INFLATION_RATE = 0.06
 
 
 # Expected investment return assumption
